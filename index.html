@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="gallery-section">
+        <div class="inner-width">
+        <h1>Art Gallery</h1>
+        <div class="border"></div>
+        <div class="gallery">
+       <!-- add own images below and name 1.png - 8.png-->
+        <a href="img/1.jpg" class="image">
+            <img src="img/1.jpg" alt="">
+        </a>
+
+        <a href="img/2.jpg" class="image">
+            <img src="img/2.jpg" alt="">
+        </a>3
+        <a href="img/3.jpg" class="image">
+            <img src="img/3.jpg" alt="">
+        </a>
+    
+        <a href="img/4.jpg" class="image">
+            <img src="img/4.jpg" alt="">
+        </a>
+        
+        <a href="img/5.jpg" class="image">
+            <img src="img/5.jpg" alt="">
+        </a>
+        
+        <a href="img/6.jpg" class="image">
+            <img src="img/6.jpg" alt="">
+        </a>
+        
+        <a href="img/7.jpg" class="image">
+            <img src="img/7.jpg" alt="">
+        </a>
+        
+        <a href="img/8.jpg" class="image">
+            <img src="img/8.jpg" alt="">
+        </a>
+
+            </div>
+        </div> 
+    </div>
+
+    <!-- <div class="insta-gallery-section">
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">Slide 01</li>
+                    <li class="splide__slide">Slide 02</li>
+                    <li class="splide__slide">Slide 03</li>
+                </ul>
+            </div>
+            
+            <div class="splide__progress">
+                <div class="splide__progress__bar">
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+    <!-- <div class="insta-gallery"> -->
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "imagesLoaded": true, "percentPosition": false }'>
+    
+            <div class="carousel-cell">
+                <a href="img/9.jpg" class="image-bank">
+                <img src="img/9.jpg" alt="">
+            </a></div>
+            <div class="carousel-cell">
+                <a href="img/10.jpg" class="image-bank">
+                <img src="img/10.jpg" alt="">
+            </a></div>
+            <div class="carousel-cell">
+                <a href="img/11.jpg" class="image-bank">
+                <img src="img/11.jpg" alt="">
+            </a></div>
+            <div class="carousel-cell">
+                <a href="img/12.jpg" class="image-bank">
+                <img src="img/12.jpg" alt="">
+            </a></div>
+            <div class="carousel-cell">
+                <a href="img/14.jpg" class="image-bank">
+                <img src="img/14.jpg" alt="">
+            </a></div>
+            <div class="carousel-cell">
+                <a href="img/18.jpg" class="image-bank">
+                <img src="img/18.jpg" alt="">
+            </a></div>
+            <div class="carousel-cell">
+                <a href="img/15.jpg" class="image-bank">
+                <img src="img/15.jpg" alt="">
+            </a></div>
+            <div class="carousel-cell">
+                <a href="img/13.jpg" class="image-bank">
+                <img src="img/13.jpg" alt="">
+            </a></div>
+            <div class="carousel-cell">
+                <a href="img/19.jpg" class="image-bank">
+                <img src="img/19.jpg" alt="">
+            </a></div>
+            
+          </div>
+        </div>
+    <!-- </div> -->
+
+    <script>
+        $(".gallery").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery:{
+                enabled: true
+            }
+        });
+    </script>
+
+    <script>
+        $('.main-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true
+        });
+    </script>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+    
+</body>
+</html>
