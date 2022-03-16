@@ -20,13 +20,6 @@
     transition: 0.4s;
 }
 
-/* .carousel-cell .image{
-    width: 500px;
-    height: 500px;
-    padding: 60px 0;
-    transition: 0.4s;
-} */
-
 * { box-sizing: border-box; }
 
 .carousel-cell img {
